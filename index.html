@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="header">Cars in garage:</div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close" onclick="closemodule()">&times;</span>
+            <p>Enter new ditails</p>
+            <input id="Nname" class="input-box" type="text" placeholder="customer name">
+            <input id="NcarColor" class="input-box" type="text" placeholder="car color">
+            <input id="NcarComp" class="input-box" type="text" placeholder="car company">
+            <input id="NcarYear" class="input-box" type="text" placeholder="make year">
+            <button class="button-d" onclick="updateCar()">Confirm</button>
+        </div>
+    </div>
+    <div>
+        <table style="margin: auto;">
+            <tr class="table-sell">
+                <td class="table-sell">
+                    <input class="input-box" type="text" id="cName" placeholder="customer name">
+                </td>
+                <td class="table-sell">
+                    <input class="input-box" type="text" id="cColor" placeholder="car color">
+                </td>
+            </tr>
+            <tr class="table-sell">
+                <td class="table-sell">
+                    <input class="input-box" type="text" id="cCompany" placeholder="car company">
+                </td>
+                <td class="table-sell">
+                    <input class="input-box" type="text" id="cYear" placeholder="make year">
+                </td>
+            </tr>
+        </table>
+        <div class="center"><button type="button" class="button-d" onclick="addCar()">Add</button></div>
+    </div>
+
+
+    <div id="carsDisplay"></div>
+</body>
+
+<script>
+
+load()
+</script>
+
+</html>
